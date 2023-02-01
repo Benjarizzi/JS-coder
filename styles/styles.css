@@ -1,0 +1,43 @@
+.main{
+    margin-top: 140px;
+}
+.titsec {
+    margin-right: 60px !important;
+    font-size: 20px;
+    color: rgb(247, 133, 27);
+    font-weight: 700;
+    margin-left: 30px;
+  }
+  .a-index{
+    color: rgb(247, 133, 27) !important;
+}
+.imgheader {
+    height: 100px;
+}
+.boton {
+    background-color: rgb(247, 133, 27)!important;
+    border: none!important;
+    transition: 1s!important;
+
+  }
+  
+  .boton:hover {
+    background-color: white!important;
+    color: black!important;
+    border: solid 1px rgb(247, 133, 27)!important;
+  }
+  
+  .precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+  }
+  .precio h5 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  .carrito{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+  }
