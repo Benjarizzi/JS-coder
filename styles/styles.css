@@ -41,3 +41,29 @@
     color: rgb(0, 0, 0);
     font-size: 30px;
   }
+  .bg{
+    background-color: rgb(10, 11, 18);
+  }
+  .bg h1,h2{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .bg a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size:25px;
+    cursor: pointer;
+    display: flex;
+    justify-content:center;
+    margin-top: 5px;
+  }
+  .chango{
+    color: white;
+    font-size: 100px;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
