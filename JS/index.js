@@ -1,26 +1,27 @@
 
-   //bucle do while
-let contraseña = "computadora"
-do{
-    contraseña = prompt("Ingrese su contraseña");
-}
-while(contraseña != "computadora")
-//Array
-const productos = [ "Coca", "Moritas", "Chocolate"]
-if (productos.includes("Coca")){
-    alert(productos.indexOf("Coca"));
-}
-//Objeto
-const producto1 ={
-    tamaño:"Grande",
-    cantidad: "un litro y medio",
-    color:"Negro"
-} 
-alert(producto1.cantidad);
+//Switch dark-mode//
 
-//Función 
-function saludar (nombre){
-    return "hola " + nombre
+const colormodebutton = document.querySelector("#color-mode");
+const body = document.body;
+const imgchange = document.getElementById("imgchange");
+const coloricono = document.getElementById("icono");
+const colorcarro = document.getElementById("carro");
+colormodebutton.addEventListener("click", cambiarmodocolor);
+
+function cambiarmodocolor(){
+    body.classList.toggle("dark-mode");
+
+    if (body.classList.contains("dark-mode")){
+        colormodebutton.innerText = "Modo claro";
+        imgchange.src = "./Imágenes/Darkmodelogo.png";
+        coloricono.classList.add("fondoboton");
+        colorcarro.classList.add("carro");
+    } else {
+        colormodebutton.innerText = "Modo oscuro";
+        imgchange.src = "./Imágenes/img-header1.png";
+        colorcarro.classList.remove("carro");
+    }
 }
-let Saludogral = saludar(prompt("Ingrese su nombre"));
-alert(Saludogral);
+
+//Carrito de compra//
+

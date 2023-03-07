@@ -15,18 +15,23 @@
 </head>
 <body class="mb-2">
     <header>
-        <nav class=" navbar bg-light fixed-top">
+        <nav class=" navbar fixed-top">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand "><img src="./Imágenes/img-header1.png" class="imgheader"></a>
+                <a href="index.html" class="navbar-brand "><img src="./Imágenes/img-header1.png" class="imgheader" id="imgchange"></a>
                 <div class="titsec text-center">
                     <h4>SECCIÓN KIOSKO</h4>
                 </div>
-                <a href="#"><i class="bi bi-cart-plus-fill carrito"></i></a>
+                <div>
+                  <button id="color-mode" class="switch">
+                     Modo oscuro
+                  </button>
+                </div>
+                  <i class="bi bi-cart-plus-fill carrito" id="carro"></i>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" id="icono">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-end menudesplegable" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
@@ -68,7 +73,7 @@
                       <h5 class="card-title">Coca Cola</h5>
                       <p class="card-text">Gaseosa de 1,5L no retornable.</p>
                       <div class="precio">
-                        <a href="#" class="btn btn-primary boton">Comprar</a>
+                        <a href="#" class="btn btn-primary boton">Añadir al Carrito</a>
                         <h5>$620</h5>
                       </div>
                     </div>
@@ -81,7 +86,7 @@
                       <h5 class="card-title">Moritas Mogul</h5>
                       <p class="card-text">Gomitas sabor frutos tropicales.</p>
                       <div class="precio">
-                        <a href="#" class="btn btn-primary boton">Comprar</a>
+                        <a href="#" class="btn btn-primary boton">Añadir al Carrito</a>
                         <h5>$500</h5>
                       </div>
                     </div>
@@ -94,7 +99,7 @@
                       <h5 class="card-title">Cadbury frutilla</h5>
                       <p class="card-text">Chocolate con leche relleno de frutillas con crema.</p>
                       <div class="precio">
-                        <a href="#" class="btn btn-primary boton">Comprar</a>
+                        <a href="#" class="btn btn-primary boton">Añadir al Carrito</a>
                         <h5>$800</h5>
                       </div>
                     </div>

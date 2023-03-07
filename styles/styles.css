@@ -67,3 +67,33 @@
     padding: 0;
     box-sizing: border-box;
   }
+  .dark-mode{
+    background-color: rgb(31, 32, 35);
+
+  }
+  .body{
+    transition: 1s;
+  }
+  .body.dark-mode.fondoboton.carro{
+    background-color: rgb(31, 32, 35);
+    transition: all 2s;
+  }
+  
+  .switch{
+    background-color: rgb(247, 133, 27);
+    color: black;
+    padding: 4px;
+    border-radius: 8px;
+    border-color:none;
+    font-size: large;
+  }
+  .fondoboton{
+    background-color: rgba(213, 211, 210, 0.315)!important;
+  }
+  .carro{
+    color: rgb(250, 250, 250);
+    font-size: 30px;
+  }
+ .menudesplegable{
+  background-color: rgba(213, 211, 210, 0.755);
+ }
