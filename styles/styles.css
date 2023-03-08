@@ -13,6 +13,7 @@
 }
 .imgheader {
     height: 100px;
+    transition: 2s;
 }
 .boton {
     background-color: rgb(247, 133, 27)!important;
@@ -71,14 +72,6 @@
     background-color: rgb(31, 32, 35);
 
   }
-  .body{
-    transition: 1s;
-  }
-  .body.dark-mode.fondoboton.carro{
-    background-color: rgb(31, 32, 35);
-    transition: all 2s;
-  }
-  
   .switch{
     background-color: rgb(247, 133, 27);
     color: black;
@@ -96,4 +89,10 @@
   }
  .menudesplegable{
   background-color: rgba(213, 211, 210, 0.755);
+ }
+ .suavizar{
+  transition: 0.4s;
+ }
+ .suavizarimg{
+  transition: 2s;
  }
