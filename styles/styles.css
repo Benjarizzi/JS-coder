@@ -114,104 +114,131 @@
  .numerito{
   text-decoration:none;
   color:rgb(247, 133, 27)  ;
-  font-size: 15px;
+  font-size: 25px;
   margin-left: 4px;
   font-weight: 700;
   padding: .1rem;
+  transition: All.3s;
+ }
+ .numerito:hover{
+  color: white;
  }
 .susbr{
   text-decoration: none;
 }
  /** Carrito **/
- .contenedor-carrito{
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
- }
- .carrito-vacio,
- .carrito-comprado{
-  color:rgb(247, 133, 27) ;
-  padding: 1rem;
- }
- .titulo-principal{
-  color:rgb(247, 133, 27) ;
-  padding: 1rem;
-  display: flex;
-  justify-content: left;
- }
- .carrito-productos{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
- }
- .img-carrito{
-  width: 7rem;
-  border-radius: 1rem;
- }
- .carrito-producto{
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(174, 167, 167, 0.352);
-  color: rgb(247, 133, 27);
-  padding: .5rem;
-  padding-right:1.5rem ;
-  border-radius: 1rem;
-  align-items: center;
- }
- .carrito-producto small{
-  font-size: .75rem;
- }
- .carrito-producto-eliminar{
-  border: 0;
-  background-color: transparent;
-  color: red;
-  font-size: 1.4rem;
+ #boton-carrito {
+  border: none;
+  color: rgb(247, 133, 27) ;
+  font-size: 40px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px 20px;
+  transition: all .3s;
+}
+#boton-carrito:hover {
   cursor: pointer;
- }
- .carrito-acciones{
-  display: flex;
-  justify-content: space-between;
-  
- }
- .carrito-acciones-derecha{
-  justify-content: right;
-  display: flex;
-  padding-right: 1.5rem;
-  align-items: center;
- }
- .carrito-acciones-total{
-  margin-right: 2rem;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  margin-top: 8px;
-  text-transform: uppercase;
- }
- .carrito-acciones-izquierda{
-  justify-content: left;
-  display: flex;
-  padding-left: 1.5rem;
- }
- .carrito-acciones-vaciar{
-  border: 0;
-  background-color: rgba(174, 167, 167, 0.352);
-  padding: 1rem;
-  border-radius: 1rem;
-  color:rgb(247, 133, 27) ;
-  text-transform: uppercase;
-  font-weight: 680;
-  cursor: pointer;
- }
- .carrito-acciones-comprar{
-  border: 0;
-  background-color: rgb(247, 133, 27);
   color: white;
-  padding: 1rem;
-  border-radius: 1rem;
-  text-transform: uppercase;
-  font-weight: 680;
+  background-color: rgb(247, 133, 27) ;
+}
+#boton-carrito:focus {
+  outline: none;
+}
+ .modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+}
+ .modal-carrito {
+  position: relative;
+  background-color: white;
+  min-width: 500px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+  margin-top: 0;
+}
+
+.modal-carrito h3 {
+  color: rgb(247, 133, 27);
+  padding-bottom: 5px;
+}
+.modal-carrito #carritoCerrar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: rgb(247, 133, 27);
+  border: none;
+  background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
   cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+  outline: none;
+}
+.modal-carrito .precioProducto {
+  padding-top: 10px;
+  
+}
+
+.productoEnCarrito {
+  border-left: 5px solid transparent;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.productoEnCarrito:hover {
+  border-left: 5px solid rgb(247, 133, 27);
+}
+
+.boton-eliminar {
+  background-color: white;
+  color: red;
+  border: none;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+.boton-eliminar:focus {
+  outline: none;
+}
+.cruz{
+  font-size:1rem ;
+  color:rgb(247, 133, 27)  ;
+}
+.boton-vaciar{
+  background-color:rgba(174, 167, 167, 0.352) ;
+  border: none;
+  border-radius: .5rem;
+  text-decoration: none;
+  padding: .5rem;
+  color: black;
  }
- .disabled{
-  display: none;
+ .boton-vaciar:hover{
+  color: white;
+  background-color: red;
  }
