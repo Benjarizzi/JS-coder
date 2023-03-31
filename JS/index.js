@@ -194,7 +194,7 @@ const actualizarCarrito = () => {
         <p>${prod.titulo}</p>
         <p>Precio:$${prod.precio}</p>
         <p>Cantidad: <span id="cantidad">${prod.cantidad}</span></p>
-        <button onclick="eliminarDelCarrito(${prod.id})" class="boton-eliminar"><i class="bi bi-trash3"></i></button>
+        <button onclick="eliminarDelCarrito('${prod.id}')" class="boton-eliminar"><i class="bi bi-trash3"></i></button>
         `
 
         contenedorCarrito.appendChild(div)

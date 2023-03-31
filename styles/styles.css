@@ -86,10 +86,7 @@
   .descripciones{
     font-size: 14px;
   }
-  .carro{
-    color: rgb(250, 250, 250);
-    font-size: 30px;
-  }
+  
  .menudesplegable{
   background-color: rgba(213, 211, 210, 0.755);
  }
@@ -111,39 +108,22 @@
   text-decoration: none;
   color:rgb(247, 133, 27);
  }
- .numerito{
-  text-decoration:none;
-  color:rgb(247, 133, 27)  ;
+ 
+.carrito-boton{
+  border: none;
+  background-color: transparent;
+  color: rgb(247, 133, 27);
   font-size: 25px;
-  margin-left: 4px;
-  font-weight: 700;
-  padding: .1rem;
-  transition: All.3s;
- }
- .numerito:hover{
-  color: white;
- }
+  transition: .5s;
+}
+.carrito-boton:hover{
+font-size: 30px;
+}
 .susbr{
   text-decoration: none;
 }
  /** Carrito **/
- #boton-carrito {
-  border: none;
-  color: rgb(247, 133, 27) ;
-  font-size: 40px;
-  background-color: white;
-  border-radius: 50%;
-  padding: 10px 20px;
-  transition: all .3s;
-}
-#boton-carrito:hover {
-  cursor: pointer;
-  color: white;
-  background-color: rgb(247, 133, 27) ;
-}
-#boton-carrito:focus {
-  outline: none;
-}
+
  .modal-contenedor {
   position: fixed;
   top: 0;
